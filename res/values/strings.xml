@@ -1,0 +1,264 @@
+<resources>
+    <string name="app_name">红云医疗</string>
+    <string-array name="rb_names">
+        <item>消息</item>
+        <item>订阅</item>
+        <item>通讯录</item>
+        <item>我</item>
+    </string-array>
+    <string name="titlebar_middle_message">消息</string>
+    <string name="scan_message">将二维码放入框内，即可自动扫描</string>
+    <string name="setting_name_default">名称</string>
+    <string name="setting_accountnum">视讯号：888888888</string>
+    <string name="my_consultation">会诊室</string>
+    <string name="my_scan">扫一扫</string>
+    <string name="my_collection">我的收藏</string>
+    <string name="my_setting">设置</string>
+    <string name="my_about">关于</string>
+    <string name="titlebar_middle_scan">二维码</string>
+    <string name="notification_no_space">空间不足提示</string>
+    <string name="notification_no_space_content">存储空间不足，可能影响部分功能使用，请注意清理空间！</string>
+    <string name="pull_to_refresh_for_release">松开立即刷新</string>
+    <string name="pull_to_refresh_for_drop_down">下拉刷新</string>
+    <string name="pull_to_refresh_for_now">正在刷新</string>
+    <string name="pull_to_refresh_for_time_prefix">最近更新:</string>
+    <string name="mycard_photo">头像</string>
+    <string name="my_name">姓名</string>
+    <string name="my_account_id">视讯号</string>
+    <string name="my_account_num">88888888</string>
+    <string name="my_phone_id">手机号</string>
+    <string name="my_phone_num">18888888888</string>
+    <string name="scan">二维码名片</string>
+    <string name="hospital">医院</string>
+    <string name="room">科室</string>
+    <string name="profession">职称</string>
+    <string name="room_phone">科室电话</string>
+    <string name="room_phone_num">88888888</string>
+    <string name="certification">认证资料</string>
+    <string name="certification_text">认证详情</string>
+    <string name="modify_password">修改密码</string>
+    <string name="app_copy_right_2">All Rights Reserved</string>
+    <string name="app_copy_right_1">Copyrights © 2015Redcdn</string>
+    <string name="about_app_introduce">红云医疗是红云融通技术有限公司针对医疗行业推出的远程医疗可视产品，遵循“功能极致、操作极简”的产品设计理念，依托公司自建的医疗视频云服务平台，为客户提供远程视频会诊、远程辅助诊疗、远程医疗咨询、手术在线直播、远程手术示教、远程医学培训等系列远程医疗服务。</string>
+    <string name="about_app_btn">检查更新</string>
+    <string name="app_webview_txt">极会诊官网</string>
+    <!-- 聊天界面 start -->
+    <string name="chat_vcard_title">名片</string>
+    <string name="load_msg_fail">消息加载失败</string>
+    <string name="select_vcard_title">选择名片</string>
+    <string name="select_linkMan">选择</string>
+    <string name="select_receiver_toast">请选择收件人</string>
+    <string name="receiver_tip" formatted="false">%s 及其他 %d 人</string>
+    <string name="chat_title_new">新消息</string>
+    <string name="toast_no_vcard">未选中任何名片</string>
+    <string name="confirm_send_vcard" formatted="false">发送  “%s” 的名片到当前消息里？</string>
+    <string name="title_share_vcard">分享 %s 的名片</string>
+    <string name="toast_sent">已发送</string>
+    <string name="toast_add_linkman_ok">添加联系人成功</string>
+    <string name="toast_add_linkman_nok">添加联系人失败</string>
+    <string name="toast_add_linkman_nouser">用户不存在</string>
+    <string name="toast_no_pic">图片不存在或已被删除</string>
+    <string name="toast_no_aud">音频不存在或已被删除</string>
+    <string name="toast_downloading_aud">音频文件正在下载，请稍后重试</string>
+    <string name="toast_aud_damaged">音频文件格式不支持或已被损坏，无法播放</string>
+    <string name="toast_no_video">视频不存在或已被删除</string>
+    <string name="chat_resend">重发</string>
+    <string name="chat_forward">转发</string>
+    <string name="chat_copy">复制</string>
+    <string name="chat_delete">删除</string>
+    <string name="toast_copy_ok">已复制</string>
+    <string name="tv_pressed_recording">按住说话 松手发送</string>
+    <string name="tv_release_not_send">松开取消发送</string>
+    <string name="tv_flingup_cancel">向上滑动取消</string>
+    <string name="btn_add">添加</string>
+    <string name="tv_add_linkman">添加对方为联系人？</string>
+    <string name="tv_receivers">已选:</string>
+    <string name="chat_video_title">视频</string>
+    <string name="chat_video_record">拍摄视频</string>
+    <string name="chat_pic_title">图片</string>
+    <string name="toast_aud_rcd_short">录音时间太短</string>
+    <string name="confirm_forward_notice" formatted="false">确定发送给  “%s” ？</string>
+    <!-- 聊天界面 end -->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="str_no_notice">暂未收到消息</string>
+    <string name="hard_loading">努力加载中</string>
+    <string name="btn_send">发送</string>
+    <string name="str_pic_thread">[图片]</string>
+    <string name="str_video_thread">[视频]</string>
+    <string name="str_vcard_thread">[名片]</string>
+    <string name="str_audio_thread">[语音]</string>
+    <string name="main_bottom_count_99">99+ </string>
+    <string name="str_butel_name">10000</string>
+    <string name="date_yesterday">昨天</string>
+    <string name="repaly_me">[有人@我]</string>
+    <string name="str_draft_thread">[草稿]</string>
+    <string name="taker_not_found">照相机启动失败</string>
+    <string name="sd_unfound">存储卡没有准备完毕，请稍后重试</string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+    <string name="str_empty_video_contact">暂无联系人可选！</string>
+    <string name="newfriend_has_passed_status">已添加</string>
+    <string name="invite_contact">邀请</string>
+    <string name="btn_ok">确定</string>
+    <string name="select_receive_message">选择联系人</string>
+    <string name="call_jmeeting">召开视频会议</string>
+    <string name="setting_meeting_setting">会诊设置</string>
+    <string name="setting_auto_speak">进入会诊默认自动发言</string>
+    <string name="setting_web_title">网络设置</string>
+    <string name="setting_web_tip">允许2G/3G/4G下进入会诊</string>
+    <string name="setting_download_title">下载设置</string>
+    <string name="setting_download_tip">允许2G/3G/4G自动下载安装包</string>
+    <string name="cpu_version_too_low">CPU ABI version is too low, failed to start SIP service.</string>
+    <string name="send_Vcard_dialog_title">发送名片</string>
+    <string name="btn_cancle">取消</string>
+    <string name="messsge_title_meeting">会议邀请</string>
+    <string name="show_macheciening_info">可视官网</string>
+    <string name="no_network_connect">网络连接不可用，请稍后重试</string>
+    <string name="video_select_title">视频</string>
+    <string name="image_select_title">相薄</string>
+    <string name="bottom_menu_take_photo">拍照</string>
+    <string name="bottom_menu_pick_photo">从手机相册选择</string>
+    <string name="about">about</string>
+    <string name="good_friend">扫一扫二维码,加我为好友</string>
+    <string name="send_message">发送</string>
+    <string name="collect_str">收藏</string>
+    <string name="file_no_exist">文件不存在</string>
+    <string name="preview_message">预 览</string>
+    <string name="video_oversize">暂不支持超出30M视频文件分享</string>
+    <string name="photo_oversize">暂不支持超出10M图片分享</string>
+    <string name="officialaccounttitle">已订</string>
+    <string name="official_recommond">推荐</string>
+    <string name="content">内容题目</string>
+    <string name="tv_time">发布时间</string>
+    <string name="thumsUp">88</string>
+    <string name="comment_conunt">评论个数</string>
+    <string name="official_name">公众号名称</string>
+    <string name="introduction">公众号简介</string>
+    <string name="frist_content">第一条内容</string>
+    <string name="datetime">发布时间</string>
+    <string name="content_topic">公众号文章题目</string>
+    <string name="content_brief">云................................................................................................................</string>
+
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="suscribe">订阅</string>
+    <string name="fans">订阅量</string>
+    <string name="subscribe_button">+订阅</string>
+    <string name="official_introduction">简介</string>
+    <string name="artical">文章内容</string>
+    <string name="subscribe">订阅</string>
+    <string name="official_card">公众号名片</string>
+    <string name="imageDesc">图片描述</string>
+    <string name="init_time">00:00:00</string>
+    <string name="network_reload">网络不给力,请检查网络</string>
+    <string name="click_refresh">点击刷新</string>
+    <string name="finish_time">00:00:00</string>
+
+
+    <!-- 登入注册界面 start -->
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="login_forgetpwd">忘记密码？</string>
+    <string name="login_inputnum">输入手机号/邮箱/视讯号</string>
+    <string name="login_inputpwd">密码</string>
+    <string name="login_numerror">账号格式不正确</string>
+    <string name="login_checkNetworkError">网络不给力，请检查网络！</string>
+    <string name="login_cancel">登录取消</string>
+    <string name="register_read">我已阅读</string>
+    <string name="register_service_button">服务协议</string>
+    <string name="settingdata_REVIEW_NUM">审核专线：400-062-0353</string>
+
+    <string name="setting_internet">无法连接网络，请检查网络配置</string>
+
+    <string name="toast_load_failed">加载失败</string>
+    <string name="password_at_least_six">密码长度至少为6位</string>
+    <string name="password_can_not_be_empty">密码不能为空</string>
+    <string name="change_password_faliure">修改密码失败</string>
+    <string name="visit_count">访问次数</string>
+    <string name="videoPwd">输入观看密码</string>
+    <string name="watch">进入观看</string>
+
+
+    <!-- 登入注册界面 end -->
+    <string name="contact_groupchat_btn">发送消息</string>
+    <string name="contact_card_btn">视频会诊</string>
+    <string name="reserve_meeting">预约会诊</string>
+    <string name="mutipeoplemeeting_titile_string">发起多人会诊</string>
+    <!--    <dimen name="holdmeeting_width">51dp</dimen>
+    <dimen name="holdmeeting_height">31dp</dimen>
+    <dimen name="holdmeeting_text_size">15sp</dimen>
+    <dimen name="holdmeeting_imageadapter_height">47dp</dimen>
+    <dimen name="holdmeeting_imageadapter_leftmargin">15dp</dimen>-->
+
+
+    <string name="titlebar_middle_contact">通讯录</string>
+    <string name="sip_wait_message">正在连接</string>
+
+    <string name="contact_add_friend_btn">添加为好友</string>
+    <string name="groupName">群名称</string>
+    <string name="share_video_beyond_limit_single"><![CDATA[视频文件>30M,请选择小于30M的视频分享]]></string>
+    <string name="share_is_illeagel">不是合法的[图片/视频]文件，不能分享</string>
+    <string name="share_video_beyond_limit_multi" formatted="false">第 %d 个文件是视频文件,但是>30M，移除</string>
+    <string name="share_dialog_title">确定发送给</string>
+    <string name="qrcode_time">二维码有效期</string>
+    <string name="noContent">暂无订阅内容</string>
+    <string name="app_id">5524cbb2</string>
+    <string name="collection_data_invalid">该内容不存在或失效</string>
+    <string name="ipcall_add_friend"><![CDATA[正在添加联系人&#8230;]]></string>
+    <string name="add_friend_text">成功添加，现在开始聊天吧！</string>
+
+    <string name="collection_xiangqing">详情</string>
+    <string name="loading_collection">加载中</string>
+    <string name="group_name">群名称</string>
+    <string name="group_num">(群人数)</string>
+    <string name="group_config_add">确认加入该群聊</string>
+    <string name="passed">已经通过</string>
+    <string name="out_date">二维码已过期</string>
+    <string name="passed_subscribe">恭喜您，您的认证资料已通过审核！</string>
+
+    <string name="save_to_contact">保存到通讯录</string>
+    <string name="clear_chat_history">清空聊天记录</string>
+    <string name="delete_and_exit">删除并退出</string>
+    <string name="set_top_chat">置顶聊天</string>
+    <string name="msg_no_disturb">消息免打扰</string>
+    <string name="group_chat_name">群聊名称</string>
+    <string name="no_name">未命名</string>
+    <string name="group_notices">群公告</string>
+    <string name="no_set">未设置</string>
+    <string name="group_chat_code">群二维码</string>
+
+    <string name="permission_mk_hint">麦克风没有声音，请尝试在手机应用权限管理中打开可视麦克风权限</string>
+    <string name="videodelate">视频已经被删除</string>
+    <string name="recording_video_title">小视频最长录制30秒</string>
+    <string name="recording_video_littleVedio">小视频</string>
+    <string name="vcard">个人名片</string>
+    <string name="consult_meeting">召开会诊</string>
+    <string name="input_meeting_id_8size">输入会诊号加入(8位数字)</string>
+    <string name="meeting_consult_meeting_topic">会诊主题</string>
+    <string name="meeting_consult_meeting_time">会诊时间</string>
+    <string name="meeting_start_meeting_time">开始时间</string>
+    <string name="meeting_consult_meeting_text">会诊室：</string>
+    <string name="meeting_consult_meeting_topic_txt">会诊主题：</string>
+    <string name="meeting_consult_meeting_date_txt">会诊日期：</string>
+    <string name="consult_meeting_txt">会诊室</string>
+    <string name="my_consult_meeting_txt">我召开的</string>
+    <string name="consult_meetingid_cannot_more_than_8_size">会诊号不能少于8位</string>
+    <string name="meeting_list_item_from">来自：</string>
+    <string name="meeting_reservemeeting_txg">预 约</string>
+    <string name="meetinglist_nomeeting_string">暂无会诊邀请！</string>
+    <string name="tack_video">拍摄视频</string>
+    <string name="play_media_error">找不到相关应用，打开文件失败</string>
+
+
+    <string name="open_contact_premission">请开启通讯录权限</string>
+    <string name="slient_play">静音播放</string>
+    <string name="artical_delate">文章已删除</string>
+    <string name="revert_speaker">已从听筒切换回扬声器播放</string>
+    <string name="mode_headset">当前为听筒播放模式</string>
+    <string name="mode_speaker">当前为扬声器播放模式</string>
+    <string name="dialog_item_headset">听筒播放</string>
+    <string name="dialog_item_speaker">扬声器播放</string>
+    <string name="video_custom_service">视频客服</string>
+
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/multi_bucket_chooser_size"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/bucket_bg"
+        android:layout_width="@dimen/x236"
+        android:layout_height="@dimen/y236">
+
+        <ImageView
+            android:id="@+id/image_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:focusable="false"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/image_target"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="@dimen/multi_bucket_chooser_img_margin"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:focusable="false"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/video_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:focusable="false"
+            android:scaleType="fitCenter"
+            android:src="@drawable/video_icon"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/selected_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#60000000"
+            android:textIsSelectable="false"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/checkbox_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:contentDescription="@null"
+            android:focusable="false"
+            android:padding="2dip"
+            android:layout_marginLeft="@dimen/x184"
+            android:layout_marginTop="@dimen/y6"
+            android:src="@drawable/select_pictures_select_icon_selected"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/bucket_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <!--         <TextView -->
+        <!--             android:id="@+id/bucket_count" -->
+        <!--             android:layout_width="wrap_content" -->
+        <!--             android:layout_height="wrap_content" -->
+        <!--             android:layout_marginLeft="2dip" -->
+        <!--             android:layout_toRightOf="@id/bucket_name" -->
+        <!--             android:textColor="@android:color/white" -->
+        <!--             android:textSize="12sp" /> -->
+    </RelativeLayout>
+
+</LinearLayout>

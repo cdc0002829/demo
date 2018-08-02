@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/m_chat_record_poupowindow_shape"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="146dp"
+        android:layout_height="146dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/m_record_audio_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/meeting_record_icon_6"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/count_down_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="@dimen/x152"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/canclebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/m_record_audio_icon"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/public_cancle_btn_color"
+            android:gravity="center_vertical"
+            android:paddingBottom="25dp"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:text="手指上滑，取消发送"
+            android:textColor="#ffffff"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

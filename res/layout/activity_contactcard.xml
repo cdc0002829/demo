@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f0f6"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/layout_head" >
+
+        <Button
+            android:id="@+id/btncontactcardback"
+            style="@style/back_btn" />
+
+        <TextView
+            android:id="@+id/tvtitle"
+            style="@style/middle_text"
+            android:text="名片" />
+
+        <Button
+            android:id="@+id/btncontactcarddel"
+            style="@style/right_btn" />
+
+<!--        <Button
+            android:id="@+id/btncontactcarddel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:drawableRight="@drawable/contactcardpress_selector" />-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <View
+            android:id="@+id/top_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:background="#d9d9d9"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rlfirstcontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <View
+                android:id="@+id/top_view_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y1"
+                android:background="#d9d9d9"
+                />
+
+            <View
+                android:id="@+id/v_contactcard_line_top"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y40"
+                />
+
+            <View
+                android:id="@+id/top_view_2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y1"
+                android:background="#d9d9d9"
+                android:layout_below="@+id/v_contactcard_line_top"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rliamgenext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:layout_below="@+id/top_view_2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:id="@+id/iamgehead"
+                    android:layout_width="@dimen/x125"
+                    android:layout_height="@dimen/y125"
+                    android:layout_marginLeft="@dimen/x25"
+                    android:layout_margin="@dimen/x20"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/contact_namecard_default" >
+                </ImageView>
+
+                <LinearLayout
+                    android:layout_width="@dimen/x240"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/x14"
+                    android:layout_marginStart="@dimen/x14"
+                    android:layout_alignBottom="@+id/iamgehead"
+                    android:layout_toRightOf="@+id/iamgehead"
+                    android:layout_toEndOf="@+id/iamgehead">
+
+                    <RelativeLayout
+                        android:id="@+id/rlmeetingroominfo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/y15"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/iamgevip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="@dimen/contact_card_imagevip_marginleft"
+                            android:layout_toRightOf="@+id/tvmeetingroom"
+                            android:background="@drawable/contactcardvip"
+                            android:gravity="center"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/tvmeetingroom"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="会诊室"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/x30"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_nubenumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rlmeetingroominfo"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/y7"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_nubenumber_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="#969799"
+                            android:textSize="@dimen/x25"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/tv_nubenumbertext" />
+
+                        <TextView
+                            android:id="@+id/tv_nubenumbertext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="视讯号："
+                            android:textColor="#969799"
+                            android:textSize="@dimen/x25"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlcontactinfo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rlmeetingroominfo"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/y7"
+                        android:visibility="invisible"
+                        >
+
+                        <TextView
+                            android:id="@+id/tvcontactname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/tvcontactdes"
+                            android:gravity="center"
+                            android:text="马骏"
+                            android:textColor="#969799"
+                            android:textSize="@dimen/x25" />
+
+                        <TextView
+                            android:id="@+id/tvcontactdes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="手机联系人："
+                            android:textColor="#969799"
+                            android:textSize="@dimen/x25"
+                            android:layout_alignParentTop="true" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/v_contact_name_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:background="#d9d9d9"
+            android:layout_below="@+id/rlfirstcontent"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_contact_blank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v_contact_name_bottom"
+            >
+
+            <View
+                android:id="@+id/v_contactcard_linetop"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y40"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <View
+                android:id="@+id/v_line_phone_top"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y1"
+                android:background="#d9d9d9"
+                android:layout_below="@+id/v_contactcard_linetop"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlsecondcontant"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_contact_blank" >
+
+            <RelativeLayout
+                android:id="@+id/rlcontactphoneinfo"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/y100"
+                android:layout_centerHorizontal="true"
+                android:background="#ffffff"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tvphone"
+                    android:layout_width="@dimen/x200"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:text="手机号"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/x32" />
+
+                <TextView
+                    android:id="@+id/tvphonedetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#969799"
+                    android:textSize="@dimen/x32"
+                    android:layout_alignBaseline="@+id/tvphone"
+                    android:layout_alignBottom="@+id/tvphone"
+                    android:layout_toRightOf="@+id/tvphone"
+                    android:layout_toEndOf="@+id/tvphone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y1"
+                android:background="#d9d9d9"
+                android:layout_below="@+id/rlcontactphoneinfo"
+                />
+
+            <View
+                android:id="@+id/v_line_phone_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y1"
+                android:background="#d9d9d9"
+                android:layout_below="@+id/v_contactcard_line"
+                />
+
+            <View
+                android:id="@+id/v_line_hospital_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y1"
+                android:background="#d9d9d9"
+                android:layout_below="@+id/rl_contact_hospital"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rl_contact_department"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/y100"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:layout_below="@+id/v_line_hospital_bottom"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:id="@+id/tv_department"
+                    android:layout_width="@dimen/x200"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:text="科室"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/x32" />
+
+                <TextView
+                    android:id="@+id/tv_department_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/x30"
+                    android:text=""
+                    android:textColor="#969799"
+                    android:textSize="@dimen/x32"
+                    android:layout_toRightOf="@+id/tv_department"/>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v_line_department_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y1"
+                android:background="#d9d9d9"
+                android:layout_below="@+id/rl_contact_department"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rl_contact_positionaltitle"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/y100"
+                android:layout_centerHorizontal="true"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:layout_below="@+id/v_line_department_bottom">
+
+                <TextView
+                    android:id="@+id/tv_positionaltitle"
+                    android:layout_width="@dimen/x200"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:text="职称"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/x32" />
+
+                <TextView
+                    android:id="@+id/tv_positionaltitle_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/x30"
+                    android:text=""
+                    android:textColor="#969799"
+                    android:textSize="@dimen/x32"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_positionaltitle"
+                    android:layout_toEndOf="@+id/tv_positionaltitle" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v_line_positionaltitle_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y1"
+                android:background="#d9d9d9"
+                android:layout_below="@+id/rl_contact_positionaltitle"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rl_contact_departmentphonenumber"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/y100"
+                android:layout_centerHorizontal="true"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:layout_below="@+id/v_line_positionaltitle_bottom">
+
+                <TextView
+                    android:id="@+id/tv_departmentphonenumber"
+                    android:layout_width="@dimen/x200"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:text="科室电话"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/x32" />
+
+                <TextView
+                    android:id="@+id/tv_departmentphonenumber_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/x30"
+                    android:text=""
+                    android:textColor="#969799"
+                    android:textSize="@dimen/x32"
+                    android:layout_toRightOf="@+id/tv_departmentphonenumber"/>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v_below_department_tel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y1"
+                android:background="#d9d9d9"
+                android:layout_below="@+id/rl_contact_departmentphonenumber"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rl_contact_hospital"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/y100"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:layout_below="@+id/v_contactcard_line"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:id="@+id/tv_hospital"
+                    android:layout_width="@dimen/x200"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:text="医院"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/x32" />
+
+                <TextView
+                    android:id="@+id/tv_hospital_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/x30"
+                    android:text=""
+                    android:textColor="#969799"
+                    android:textSize="@dimen/x32"
+                    android:layout_toRightOf="@+id/tv_hospital"/>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v_contactcard_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y40"
+                android:layout_below="@+id/rlcontactphoneinfo"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+            </View>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_add_friend"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlsecondcontant"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/y30"
+            android:background="#f0f2f5"
+            android:gravity="center"
+            android:paddingTop="@dimen/contact_card_nodp"
+            android:visibility="invisible">
+
+            <Button
+                android:id="@+id/btn_add_friend"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y96"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x30"
+                android:layout_gravity="center"
+                android:background="@drawable/startmeetingbtn_selector"
+                android:focusable="true"
+                android:text="@string/contact_add_friend_btn"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/x36"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_sendmessage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlsecondcontant"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/y30"
+            android:background="#f0f2f5"
+            android:gravity="center"
+            android:paddingTop="@dimen/contact_card_nodp" >
+
+            <Button
+                android:id="@+id/btn_sendmessage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y96"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x30"
+                android:layout_gravity="center"
+                android:background="@drawable/startmeetingbtn_selector"
+                android:focusable="true"
+                android:text="@string/contact_groupchat_btn"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/x36"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlendcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_sendmessage"
+            android:background="#f0f2f5"
+            android:paddingTop="@dimen/contact_card_nodp"
+          >
+
+            <Button
+                android:id="@+id/ibstartmeeting"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y96"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x30"
+                android:background="@drawable/contact_namecard_selector"
+                android:focusable="true"
+                android:text="@string/contact_card_btn"
+                android:textColor="#000000"
+                android:textSize="@dimen/x36"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/y30"
+                />
+        </RelativeLayout>
+
+        <!--        <View
+                    android:id="@+id/v_contactcard_linetop"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/rlfirstcontent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />-->
+    </RelativeLayout>
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+</LinearLayout>

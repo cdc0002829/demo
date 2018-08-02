@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_consulting_room"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/color_page_backgroud_color"
+    tools:context="cn.redcdn.hvs.meeting.activity.ConsultingRoomActivity">
+
+    <include
+        layout="@layout/titlebar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/conference_meeting_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y110"
+            android:background="@drawable/contact_item_selector"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_toEndOf="@+id/imageView"
+                android:layout_toRightOf="@+id/imageView"
+                android:gravity="center"
+                android:text="@string/consult_meeting"
+                android:textSize="@dimen/x32"/>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/x28"
+                android:layout_marginStart="11dp"
+                android:src="@drawable/meeting_consult_meeting_activity_conference"/>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x28"
+                app:srcCompat="@drawable/meeting_consult_meeting_activity_next"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:background="@color/color_butel_selfinfo_darkline_color"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:layout_marginTop="@dimen/y40"
+            android:background="@color/color_butel_selfinfo_darkline_color"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y110"
+            android:orientation="horizontal"
+            android:background="@color/default_bg"
+            >
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginStart="@dimen/x20"
+                android:src="@drawable/meeting_consult_meeting_activity_conference_add"/>
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:id="@+id/meeting_consult_meetining_join_meeting"
+                android:layout_width="@dimen/x92"
+                android:layout_height="@dimen/x60"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:enabled="false"
+                android:layout_marginRight="@dimen/x28"
+                android:background="@drawable/meeting_consult_meeting_activity_join_button_selector"
+                android:text="加入"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/x26"
+                />
+
+            <EditText
+                android:id="@+id/meetingid_input_edit"
+                android:layout_width="@dimen/x400"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:background="@null"
+                android:enabled="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:inputType="number"
+                android:maxLength="8"
+                android:hint="@string/input_meeting_id_8size"
+                android:textColor="#c7c7cd"
+                android:textSize="@dimen/x32"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageView4"
+                android:layout_toEndOf="@+id/imageView4"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:background="@color/color_butel_selfinfo_darkline_color"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="#fdfefe">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/id_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:visibility="invisible"
+                android:divider="#ffff0000"
+                android:dividerHeight="1dp"/>
+
+            <LinearLayout
+                android:id="@+id/nomeeting_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/meetinglist_nolistmargin"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/meetinglist_nomeetingbg"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/login_firstedit_topmargin"
+                    android:text="@string/meetinglist_nomeeting_string"
+                    android:textColor="#aaabad"
+                    android:textSize="@dimen/login_lgoin_textsize"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/netquestion_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/meetinglist_net_margin"
+                android:orientation="vertical"
+
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/meetinglist_netquestion"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/meetinglist_nettext_margin"
+                    android:text="网络不给力，请重新加载哦！"
+                    android:textColor="#aaabad"
+                    android:textSize="@dimen/login_user_size"/>
+
+                    <LinearLayout
+                        android:id="@+id/meetingrefresh_btn"
+                        android:layout_width="@dimen/meetinglist_refresh_width"
+                        android:layout_height="@dimen/meetinglist_refresh_height"
+                        android:layout_gravity="center"
+                        android:background="@drawable/meetinglist_refresh_btn_selector"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/meetinglist_refresh"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="点击刷新"
+                            android:textColor="#969799"
+                            android:textSize="@dimen/x30"
+                            />
+                    </LinearLayout>
+            </LinearLayout>
+            <ListView
+                android:visibility="invisible"
+                android:id="@+id/meeting_history_lv"
+                android:background="@drawable/meeting_historylv_bg"
+                android:divider="#bec1cc"
+                android:dividerHeight="@dimen/y1"
+                android:listSelector="#00000000"
+                android:padding="@dimen/x1"
+                android:scrollbars="none"
+                android:layout_marginLeft="@dimen/x122"
+                android:layout_marginStart="@dimen/x122"
+                android:layout_width="@dimen/x400"
+                android:layout_height="wrap_content"></ListView>
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>

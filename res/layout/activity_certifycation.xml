@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/titlebar1"
+        layout="@layout/titlebar"></include>
+
+    <ImageView
+        android:id="@+id/certification_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlebar1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y112"
+        android:src="@drawable/certify" />
+
+    <TextView
+        android:id="@+id/passed_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/certification_iv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y88"
+        android:text="@string/passed"
+        android:textColor="@color/text_color_name"
+        android:textSize="@dimen/x36" />
+
+    <TextView
+        android:id="@+id/pass_subscibe_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passed_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y40"
+        android:text="@string/passed_subscribe"
+        android:textColor="@color/passed_sucscibe"
+        android:textSize="@dimen/x28" />
+
+    <ImageView
+        android:layout_marginTop="46dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        android:layout_below="@+id/pass_subscibe_tv"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

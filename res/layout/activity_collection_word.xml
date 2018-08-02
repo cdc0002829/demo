@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_page_backgroud_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/titlebar" />
+
+    <ScrollView
+        android:layout_marginTop="@dimen/y40"
+        android:fitsSystemWindows="true"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/y40" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+
+        <RelativeLayout
+            android:id="@+id/name_pic_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/y30"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/collection_text_icon"
+                android:layout_width="@dimen/x82"
+                android:layout_height="@dimen/y82"
+                android:layout_marginRight="@dimen/x20"
+                android:background="@drawable/head"
+                android:focusable="false"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/collection_text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/collection_text_icon"
+                android:text="创建者"
+                android:textColor="#222625"
+                android:textSize="@dimen/x32" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y30">
+
+            <TextView
+                android:id="@+id/collection_text_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:text="收藏时间"
+                android:textColor="@color/jmeetingsdk_qn_dialog_bottom_bg_press_color"
+                android:textSize="@dimen/x24" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="@dimen/x190"
+                android:layout_height="@dimen/y1"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/collection_text_time"
+                android:background="@color/color_butel_selfinfo_darkline_color" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="@dimen/x190"
+                android:layout_height="@dimen/y1"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/collection_text_time"
+                android:background="@color/color_butel_selfinfo_darkline_color" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/collection_txt_ly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_marginTop="@dimen/y40"
+            android:orientation="vertical">
+
+            <cn.redcdn.hvs.profiles.collection.EmojiconTextView
+                android:id="@+id/collection_textdetail_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:lineSpacingExtra="@dimen/x48"
+                android:text="文字内容"
+                android:textColor="@color/color_setting_text"
+                android:textSize="@dimen/x32" />
+
+
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y96"
+    android:background="#ffffff"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/x28"
+        android:text="姓名"
+        android:textColor="#2d2d2d"
+        android:textSize="@dimen/x32" />
+
+        <cn.redcdn.hvs.accountoperate.info.LimitEditText
+            android:maxLines="1"
+            android:singleLine="true"
+            android:id="@+id/ET_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/x190"
+            android:background="@null"
+            android:focusable="true"
+            android:textColor="#8d8d8d"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/x28" />
+
+    <!--<EditText-->
+        <!--android:maxLines="1"-->
+        <!--android:singleLine="true"-->
+        <!--android:id="@+id/ET_name"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginLeft="@dimen/x190"-->
+        <!--android:background="@null"-->
+        <!--android:focusable="true"-->
+        <!--android:textColor="#8d8d8d"-->
+        <!--android:textCursorDrawable="@null"-->
+        <!--android:textSize="@dimen/x28" />-->
+    <TextView
+        android:id="@+id/name_hint_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="输入姓名"
+        android:textColor="#999999"
+        android:textSize="@dimen/x28"
+        android:layout_marginLeft="@dimen/x190"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/name_hint_nameafter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="(请填写真实姓名,提交后不可修改)"
+        android:textColor="#999999"
+        android:textSize="@dimen/x26"
+        android:layout_toRightOf="@id/name_hint_name"
+        android:visibility="visible"/>
+</RelativeLayout>
+</LinearLayout>
